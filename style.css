@@ -14,7 +14,7 @@ body {
   /* Menu Style */
   nav {
     background-color: #f4f4f4;
-    padding: 10px 0;
+    padding: 45px 0;
   }
   
   .menu {
@@ -32,7 +32,7 @@ body {
   .menu a {
     text-decoration: none;
     color: #000;
-    padding: 10px 20px;
+    padding: 10px 30px;
     display: block;
   }
   
@@ -80,4 +80,26 @@ body {
       border: none;
     }
   }
+/* Logo Styles */
+.logo {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 40px; /* Adjust as needed */
+  }
+  
+  .logo img {
+    height: 100px; /* Adjust the height of the logo */
+    width: auto; /* Maintain aspect ratio */
+    display: block; /* Removes any extra spacing under the logo */
+  }
+  
+  .logo a {
+    text-decoration: none; /* Removes any link styling like underline */
+    display: inline-block; /* Ensures the anchor does not add extra styling */
+  }
+  .logo img, .logo a {
+    margin: 0;
+    padding: 0;
+  }
+  
   

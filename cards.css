@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0px;
+    padding: 10px;
+}
+
+.box-container {
+    display: flex; /* Giver horisontal layout */
+    justify-content: flex-start; /* Justér til venstre (kan ændres til center eller andet) */
+    gap: 0px; /* Giver mellemrum mellem boksene */
+    padding: 0px; /* Giver lidt "luft" inden i containeren */
+    margin-right: 20px;
+  }
+
+.card {
+    background-color: white;         /* Hvid baggrund for kort */
+    border: 1px solid #ddd;          /* Tynd kant omkring kort */
+    border-radius: 10px;             /* Runde hjørner */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Let skygge for dybde */
+    width: 250px;                    /* Størrelse på kortet */
+    padding: 20px;                   /* Indvendig afstand */
+    text-align: center;              /* Centrer tekst */
+    transition: transform 0.2s;      /* Giver en glidende animations-effekt */
+    margin-left: 100px;               /* Flytter kortene til højre */
+}
+
+.card:hover {
+    transform: scale(1.05);          /* Giver en let zoom-effekt ved hover */
+}
+.no-hover-card:hover {
+    transform: none;
+}
+
+.card h3 {
+    color: #004F2D;                  /* Grøn overskrift */
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #555;                     /* Grå tekstfarve */
+    font-size: 14px;                 /* Mindre skriftstørrelse */
+    line-height: 1.5;
+}
+
+.card a {
+    text-decoration: none;   /* Fjerner understregningen */
+    color: #004F2D;          /* Ændrer farven til grøn eller en anden ønsket farve */
+    font-weight: bold;       /* Fremhæver teksten, hvis ønsket */
+}
+
+/* Tilføj effekt ved hover (valgfrit): */
+.card a:hover {
+    text-decoration: underline; /* Tilføjer en understregning, når du holder musen over */
+    color: #006837;             /* Ændrer farve ved hover for en interaktiv effekt */
+}
